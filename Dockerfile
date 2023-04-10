@@ -4,6 +4,6 @@ WORKDIR /root/clang
 
 RUN apt update && apt upgrade -y
 
-RUN apt install build-essential -y
+RUN apt install -y build-essential gdb
 
 COPY . .
